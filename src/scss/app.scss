@@ -1,0 +1,29 @@
+@import './slider';
+
+body {
+    font-family:sans-serif;
+}
+header {
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 2rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: darkgrey;
+}
+
+main {
+    padding: 5em;
+
+    .container {
+
+        width:75%;
+        margin:0 auto;
+        padding:1em;
+        background:lightgrey;
+        border-radius:10px;
+    }
+}

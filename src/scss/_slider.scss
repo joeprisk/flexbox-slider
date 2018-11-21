@@ -1,0 +1,61 @@
+.slider-container {
+
+    width: 100%;
+    overflow: hidden;
+  
+    .sliding-box {
+  
+  
+      position: relative;
+      display: flex;
+      flex-wrap: nowrap;
+      left:      -100%;            // finishing pint to the left
+      transform: translateX(100%);
+  
+  
+      &.is-set {
+  
+        transform:  none;
+        transition: transform 0.5s ease-in-out;
+  
+      }
+  
+      &.is-reversing {
+  
+        transform: translateX(-100%);
+  
+      }
+  
+  
+  
+  
+        article {
+
+            &.green {
+                background: green;
+            }
+
+            &.purple {
+                background: purple;
+            }
+
+            &.orange {
+                background: orange;
+            }
+          max-width: 100%;
+          min-width: 100%;
+          height:250px;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+
+          h1 {
+              color: white;
+              font-size:5rem;
+              text-transform:uppercase;
+          }
+  
+        }
+      
+    }
+  }
